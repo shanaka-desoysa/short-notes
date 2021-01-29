@@ -14,7 +14,7 @@
     
     
       
-        <title>Open Source Routing Machine - Notes</title>
+        <title>Gradients - Notes</title>
       
     
     
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#osrm" class="md-skip">
+        <a href="#pytorch-gradients" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Open Source Routing Machine
+              Gradients
             
           </span>
         </div>
@@ -191,11 +191,307 @@
         <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
       
       <label class="md-nav__link" for="nav-2">
+        Network Security
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="Network Security" data-md-level="1">
+        <label class="md-nav__title" for="nav-2">
+          <span class="md-nav__icon md-icon"></span>
+          Network Security
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Network_Security/ARP_Spoofing/" class="md-nav__link">
+        Kali Linux ARP Spoofing
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+      
+      <label class="md-nav__link" for="nav-3">
+        OSRM
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="OSRM" data-md-level="1">
+        <label class="md-nav__title" for="nav-3">
+          <span class="md-nav__icon md-icon"></span>
+          OSRM
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OSRM/Open_Source_Routing_Machine/" class="md-nav__link">
+        Open Source Routing Machine
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      
+      <label class="md-nav__link" for="nav-4">
+        PyTorch
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+      <nav class="md-nav" aria-label="PyTorch" data-md-level="1">
+        <label class="md-nav__title" for="nav-4">
+          <span class="md-nav__icon md-icon"></span>
+          PyTorch
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+          
+            
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Gradients
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Gradients
+      </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#autograd-automatic-differentiation" class="md-nav__link">
+    Autograd - Automatic Differentiation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#back-propagation-on-one-step" class="md-nav__link">
+    Back-propagation on one step
+  </a>
+  
+    <nav class="md-nav" aria-label="Back-propagation on one step">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-perform-standard-imports" class="md-nav__link">
+    Step 1. Perform standard imports
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-a-tensor-with-requires_grad-set-to-true" class="md-nav__link">
+    Step 2. Create a tensor with requires_grad set to True
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-define-a-function" class="md-nav__link">
+    Step 3. Define a function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-backprop" class="md-nav__link">
+    Step 4. Backprop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-display-the-resulting-gradient" class="md-nav__link">
+    Step 5. Display the resulting gradient
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#back-propagation-on-multiple-steps" class="md-nav__link">
+    Back-propagation on multiple steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Back-propagation on multiple steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-tensor" class="md-nav__link">
+    1. Create a tensor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-the-first-layer-with-y-3x2" class="md-nav__link">
+    2. Create the first layer with $y = 3x+2$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-create-the-second-layer-with-z-2y2" class="md-nav__link">
+    3. Create the second layer with $z = 2y^2$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-set-the-output-to-be-the-matrix-mean" class="md-nav__link">
+    4. Set the output to be the matrix mean
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-now-perform-back-propagation-to-find-the-gradient-of-x-wrt-out" class="md-nav__link">
+    5. Now perform back-propagation to find the gradient of x w.r.t out
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turn-off-tracking" class="md-nav__link">
+    Turn off tracking
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tensor_basics/" class="md-nav__link">
+        Tensor basics
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tensor_operations/" class="md-nav__link">
+        Tensor operations
+      </a>
+    </li>
+  
+
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" >
+      
+      <label class="md-nav__link" for="nav-5">
         TensorFlow
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="TensorFlow" data-md-level="1">
-        <label class="md-nav__title" for="nav-2">
+        <label class="md-nav__title" for="nav-5">
           <span class="md-nav__icon md-icon"></span>
           TensorFlow
         </label>
@@ -226,73 +522,19 @@
 
   
   
-    
-  
-  
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-      
-      
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
-      
-      <label class="md-nav__link" for="nav-3">
-        Notebooks
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-      <nav class="md-nav" aria-label="Notebooks" data-md-level="1">
-        <label class="md-nav__title" for="nav-3">
-          <span class="md-nav__icon md-icon"></span>
-          Notebooks
-        </label>
-        <ul class="md-nav__list" data-md-scrollfix>
-          
-          
-            
-  
-  
-    
-  
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
-        Open Source Routing Machine
-      </a>
-      
-    </li>
-  
-
-          
-        </ul>
-      </nav>
-    </li>
-  
-
-    
-      
-      
-      
-
-  
-  
   
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" >
       
-      <label class="md-nav__link" for="nav-4">
+      <label class="md-nav__link" for="nav-6">
         Pandas
         <span class="md-nav__icon md-icon"></span>
       </label>
       <nav class="md-nav" aria-label="Pandas" data-md-level="1">
-        <label class="md-nav__title" for="nav-4">
+        <label class="md-nav__title" for="nav-6">
           <span class="md-nav__icon md-icon"></span>
           Pandas
         </label>
@@ -334,6 +576,124 @@
   
     
   
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#autograd-automatic-differentiation" class="md-nav__link">
+    Autograd - Automatic Differentiation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#back-propagation-on-one-step" class="md-nav__link">
+    Back-propagation on one step
+  </a>
+  
+    <nav class="md-nav" aria-label="Back-propagation on one step">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-perform-standard-imports" class="md-nav__link">
+    Step 1. Perform standard imports
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-a-tensor-with-requires_grad-set-to-true" class="md-nav__link">
+    Step 2. Create a tensor with requires_grad set to True
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-define-a-function" class="md-nav__link">
+    Step 3. Define a function
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-backprop" class="md-nav__link">
+    Step 4. Backprop
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-display-the-resulting-gradient" class="md-nav__link">
+    Step 5. Display the resulting gradient
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#back-propagation-on-multiple-steps" class="md-nav__link">
+    Back-propagation on multiple steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Back-propagation on multiple steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-create-a-tensor" class="md-nav__link">
+    1. Create a tensor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-create-the-first-layer-with-y-3x2" class="md-nav__link">
+    2. Create the first layer with $y = 3x+2$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-create-the-second-layer-with-z-2y2" class="md-nav__link">
+    3. Create the second layer with $z = 2y^2$
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-set-the-output-to-be-the-matrix-mean" class="md-nav__link">
+    4. Set the output to be the matrix mean
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-now-perform-back-propagation-to-find-the-gradient-of-x-wrt-out" class="md-nav__link">
+    5. Now perform back-propagation to find the gradient of x w.r.t out
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turn-off-tracking" class="md-nav__link">
+    Turn off tracking
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -14735,17 +15095,54 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link {
 
 <div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="osrm">OSRM<a class="anchor-link" href="#OSRM">&#182;</a></h1>
+<h1 id="pytorch-gradients">PyTorch Gradients<a class="anchor-link" href="#PyTorch-Gradients">&#182;</a></h1>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>This section covers the PyTorch <a href='https://pytorch.org/docs/stable/autograd.html'><strong><tt>autograd</tt></strong></a> implementation of gradient descent. Tools include:</p>
+<ul>
+<li><a href='https://pytorch.org/docs/stable/autograd.html#torch.autograd.backward'><tt><strong>torch.autograd.backward()</strong></tt></a></li>
+<li><a href='https://pytorch.org/docs/stable/autograd.html#torch.autograd.grad'><tt><strong>torch.autograd.grad()</strong></tt></a></li>
+</ul>
+<p>Before continuing in this section, be sure to watch the theory lectures to understand the following concepts:</p>
+<ul>
+<li>Error functions (step and sigmoid)</li>
+<li>One-hot encoding</li>
+<li>Maximum likelihood</li>
+<li>Cross entropy (including multi-class cross entropy)</li>
+<li>Back propagation (backprop)</li>
+</ul>
+<div class="alert alert-info"><h3>Additional Resources:</h3>
+<strong>
+<a href='https://pytorch.org/docs/stable/notes/autograd.html'>PyTorch Notes:</a></strong>&nbsp;&nbsp;<font color=black>Autograd mechanics</font></div>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="autograd-automatic-differentiation">Autograd - Automatic Differentiation<a class="anchor-link" href="#Autograd---Automatic-Differentiation">&#182;</a></h2><p>In previous sections we created tensors and performed a variety of operations on them, but we did nothing to store the sequence of operations, or to apply the derivative of a completed function.</p>
+<p>In this section we'll introduce the concept of the <em>dynamic computational graph</em> which is comprised of all the <em>Tensor</em> objects in the network, as well as the <em>Functions</em> used to create them. Note that only the input Tensors we create ourselves will not have associated Function objects.</p>
+<p>The PyTorch <a href='https://pytorch.org/docs/stable/autograd.html'><strong><tt>autograd</tt></strong></a> package provides automatic differentiation for all operations on Tensors. This is because operations become attributes of the tensors themselves. When a Tensor's <tt>.requires_grad</tt> attribute is set to True, it starts to track all operations on it. When an operation finishes you can call <tt>.backward()</tt> and have all the gradients computed automatically. The gradient for a tensor will be accumulated into its <tt>.grad</tt> attribute.</p>
+<p>Let's see this in practice.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="back-propagation-on-one-step">Back-propagation on one step<a class="anchor-link" href="#Back-propagation-on-one-step">&#182;</a></h2><p>We'll start by applying a single polynomial function $y = f(x)$ to tensor $x$. Then we'll backprop and print the gradient $\frac {dy} {dx}$.</p>
+<p>$\begin{split}Function:\quad y &amp;= 2x^4 + x^3 + 3x^2 + 5x + 1 \\
+Derivative:\quad y' &amp;= 8x^3 + 3x^2 + 6x + 5\end{split}$</p>
+<h4 id="step-1-perform-standard-imports">Step 1. Perform standard imports<a class="anchor-link" href="#Step-1.-Perform-standard-imports">&#182;</a></h4>
 </div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[1]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
-    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="err">!</span><span class="n">pip</span> <span class="n">install</span> <span class="n">polyline</span> <span class="n">geocoder</span> <span class="o">-</span><span class="n">qq</span>
+    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span>
 </pre></div>
 
         </div>
@@ -14754,85 +15151,21 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link {
 </div>
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="step-2-create-a-tensor-with-requires_grad-set-to-true">Step 2. Create a tensor with <tt>requires_grad</tt> set to True<a class="anchor-link" href="#Step-2.-Create-a-tensor-with-requires_grad-set-to-True">&#182;</a></h4><p>This sets up computational tracking on the tensor.</p>
+
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
-    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">logging</span>
-<span class="kn">import</span> <span class="nn">requests</span>
-<span class="kn">import</span> <span class="nn">json</span>
-<span class="kn">import</span> <span class="nn">polyline</span>
-<span class="kn">import</span> <span class="nn">folium</span>
-<span class="kn">from</span> <span class="nn">folium.plugins</span> <span class="kn">import</span> <span class="n">MeasureControl</span>
-<span class="kn">import</span> <span class="nn">geocoder</span>
-
-<span class="kn">from</span> <span class="nn">functools</span> <span class="kn">import</span> <span class="n">lru_cache</span>
-
-<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
-<span class="n">DEBUG</span> <span class="o">=</span> <span class="kc">True</span>
-
-<span class="nd">@lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">geocode</span><span class="p">(</span><span class="n">location</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">_geocode</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">_geocode</span><span class="p">(</span><span class="n">location</span><span class="p">):</span>
-    <span class="kn">import</span> <span class="nn">geocoder</span>
-    <span class="n">g</span> <span class="o">=</span> <span class="n">geocoder</span><span class="o">.</span><span class="n">osm</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">g</span><span class="o">.</span><span class="n">latlng</span>
-
-<span class="nd">@lru_cache</span><span class="p">(</span><span class="n">maxsize</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
-<span class="k">def</span> <span class="nf">get_route</span><span class="p">(</span><span class="n">olat</span><span class="p">,</span> <span class="n">olng</span><span class="p">,</span> <span class="n">dlat</span><span class="p">,</span> <span class="n">dlng</span><span class="p">):</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">_get_route</span><span class="p">(</span><span class="n">olat</span><span class="p">,</span> <span class="n">olng</span><span class="p">,</span> <span class="n">dlat</span><span class="p">,</span> <span class="n">dlng</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">response</span>
-
-<span class="k">def</span> <span class="nf">_get_route</span><span class="p">(</span><span class="n">olat</span><span class="p">,</span> <span class="n">olng</span><span class="p">,</span> <span class="n">dlat</span><span class="p">,</span> <span class="n">dlng</span><span class="p">):</span>
-    <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s1">&#39;http://router.project-osrm.org/route/v1/driving/</span><span class="si">{</span><span class="n">olng</span><span class="si">}</span><span class="s1">,</span><span class="si">{</span><span class="n">olat</span><span class="si">}</span><span class="s1">;</span><span class="si">{</span><span class="n">dlng</span><span class="si">}</span><span class="s1">,</span><span class="si">{</span><span class="n">dlat</span><span class="si">}</span><span class="s1">?alternatives=false&amp;steps=false&#39;</span>
-    <span class="c1"># logger.debug(url)</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="kc">None</span>
-
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">logger</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;====== OSRM: </span><span class="si">{</span><span class="n">url</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>
-        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">verify</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-    <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
-        <span class="k">raise</span>
-    
-    <span class="c1"># logger.debug(response.text)</span>
-    <span class="k">if</span> <span class="n">response</span> <span class="ow">and</span> <span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">:</span>
-        <span class="n">response_dict</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">response</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
-        <span class="c1">#possible = pd.DataFrame([{&#39;Distance&#39;: (route[&#39;distance&#39;] / 1000) *  0.621371 , route[&#39;weight_name&#39;]: route[&#39;weight&#39;]} for route in response_dict[&#39;routes&#39;]])</span>
-        <span class="k">return</span> <span class="n">response_dict</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">None</span>
-
-<span class="k">def</span> <span class="nf">get_routing_map</span><span class="p">(</span><span class="n">origin</span><span class="p">,</span> <span class="n">destination</span><span class="p">):</span>
-    <span class="n">orig_latlng</span> <span class="o">=</span> <span class="n">geocode</span><span class="p">(</span><span class="n">origin</span><span class="p">)</span>
-    <span class="n">dest_latlng</span> <span class="o">=</span> <span class="n">geocode</span><span class="p">(</span><span class="n">destination</span><span class="p">)</span>
-
-    <span class="n">resp</span> <span class="o">=</span> <span class="n">get_route</span><span class="p">(</span><span class="n">orig_latlng</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">orig_latlng</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">dest_latlng</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">dest_latlng</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
-
-    <span class="n">decoded</span> <span class="o">=</span> <span class="n">polyline</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="n">resp</span><span class="p">[</span><span class="s2">&quot;routes&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;geometry&#39;</span><span class="p">])</span>
-    <span class="n">distance</span> <span class="o">=</span> <span class="n">resp</span><span class="p">[</span><span class="s2">&quot;routes&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;distance&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mf">0.000621371</span>
-    <span class="n">duration</span> <span class="o">=</span> <span class="n">resp</span><span class="p">[</span><span class="s2">&quot;routes&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;duration&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="mi">60</span>
-
-    <span class="n">map2</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">(</span><span class="n">orig_latlng</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">orig_latlng</span><span class="p">[</span><span class="mi">1</span><span class="p">]),</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">6</span><span class="p">,</span>
-                                    <span class="n">control_scale</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">map2</span><span class="o">.</span><span class="n">add_child</span><span class="p">(</span><span class="n">MeasureControl</span><span class="p">(</span>
-        <span class="n">primary_length_unit</span><span class="o">=</span><span class="s1">&#39;miles&#39;</span><span class="p">,</span>
-        <span class="n">secondary_length_unit</span><span class="o">=</span><span class="s1">&#39;meters&#39;</span><span class="p">,</span>
-        <span class="n">primary_area_unit</span><span class="o">=</span><span class="s1">&#39;acres&#39;</span><span class="p">,</span>
-        <span class="n">secondary_area_unit</span><span class="o">=</span><span class="s1">&#39;sqmeters&#39;</span><span class="p">)</span>
-    <span class="p">)</span>
-
-    <span class="n">folium</span><span class="o">.</span><span class="n">PolyLine</span><span class="p">(</span><span class="n">locations</span><span class="o">=</span><span class="n">decoded</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;blue&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">map2</span><span class="p">)</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">duration</span><span class="si">}</span><span class="s2"> minutes&quot;</span><span class="p">)</span>
-    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">distance</span><span class="si">}</span><span class="s2"> miles&quot;</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">map2</span>
+    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">(</span><span class="mf">2.0</span><span class="p">,</span> <span class="n">requires_grad</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
         </div>
@@ -14841,15 +15174,22 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link {
 </div>
 </div>
 
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="step-3-define-a-function">Step 3. Define a function<a class="anchor-link" href="#Step-3.-Define-a-function">&#182;</a></h4>
+</div>
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
-    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">get_routing_map</span><span class="p">(</span><span class="s1">&#39;Plymouth, MN&#39;</span><span class="p">,</span> <span class="s1">&#39;San Diego, CA&#39;</span><span class="p">)</span>
+    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span> <span class="o">+</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
         </div>
@@ -14870,38 +15210,55 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>2086.9633333333336 minutes
-1935.3934499907998 miles
+<pre>tensor(63., grad_fn=&lt;AddBackward0&gt;)
 </pre>
 </div>
 </div>
 
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html=PCFET0NUWVBFIGh0bWw+CjxoZWFkPiAgICAKICAgIDxtZXRhIGh0dHAtZXF1aXY9ImNvbnRlbnQtdHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVURi04IiAvPgogICAgPHNjcmlwdD5MX1BSRUZFUl9DQU5WQVM9ZmFsc2U7IExfTk9fVE9VQ0g9ZmFsc2U7IExfRElTQUJMRV8zRD1mYWxzZTs8L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvbnBtL2xlYWZsZXRAMS40LjAvZGlzdC9sZWFmbGV0LmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2NvZGUuanF1ZXJ5LmNvbS9qcXVlcnktMS4xMi40Lm1pbi5qcyI+PC9zY3JpcHQ+CiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvMy4yLjAvanMvYm9vdHN0cmFwLm1pbi5qcyI+PC9zY3JpcHQ+CiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYnMvTGVhZmxldC5hd2Vzb21lLW1hcmtlcnMvMi4wLjIvbGVhZmxldC5hd2Vzb21lLW1hcmtlcnMuanMiPjwvc2NyaXB0PgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvbnBtL2xlYWZsZXRAMS40LjAvZGlzdC9sZWFmbGV0LmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9jc3MvYm9vdHN0cmFwLm1pbi5jc3MiLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvMy4yLjAvY3NzL2Jvb3RzdHJhcC10aGVtZS5taW4uY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vbWF4Y2RuLmJvb3RzdHJhcGNkbi5jb20vZm9udC1hd2Vzb21lLzQuNi4zL2Nzcy9mb250LWF3ZXNvbWUubWluLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9MZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy8yLjAuMi9sZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy5jc3MiLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9yYXdjZG4uZ2l0aGFjay5jb20vcHl0aG9uLXZpc3VhbGl6YXRpb24vZm9saXVtL21hc3Rlci9mb2xpdW0vdGVtcGxhdGVzL2xlYWZsZXQuYXdlc29tZS5yb3RhdGUuY3NzIi8+CiAgICA8c3R5bGU+aHRtbCwgYm9keSB7d2lkdGg6IDEwMCU7aGVpZ2h0OiAxMDAlO21hcmdpbjogMDtwYWRkaW5nOiAwO308L3N0eWxlPgogICAgPHN0eWxlPiNtYXAge3Bvc2l0aW9uOmFic29sdXRlO3RvcDowO2JvdHRvbTowO3JpZ2h0OjA7bGVmdDowO308L3N0eWxlPgogICAgCiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLAogICAgICAgIGluaXRpYWwtc2NhbGU9MS4wLCBtYXhpbXVtLXNjYWxlPTEuMCwgdXNlci1zY2FsYWJsZT1ubyIgLz4KICAgIDxzdHlsZT4jbWFwXzc3MzdhNWFlZDYzMjQ5MDQ5OTAzZjk4YTg4YTc4ODRiIHsKICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7CiAgICAgICAgd2lkdGg6IDEwMC4wJTsKICAgICAgICBoZWlnaHQ6IDEwMC4wJTsKICAgICAgICBsZWZ0OiAwLjAlOwogICAgICAgIHRvcDogMC4wJTsKICAgICAgICB9CiAgICA8L3N0eWxlPgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vcmF3Y2RuLmdpdGhhY2suY29tL2xqYWdpcy9sZWFmbGV0LW1lYXN1cmUvMi4xLjcvZGlzdC9sZWFmbGV0LW1lYXN1cmUuanMiPjwvc2NyaXB0PgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL3Jhd2Nkbi5naXRoYWNrLmNvbS9samFnaXMvbGVhZmxldC1tZWFzdXJlLzIuMS43L2Rpc3QvbGVhZmxldC1tZWFzdXJlLmNzcyIvPgo8L2hlYWQ+Cjxib2R5PiAgICAKICAgIAogICAgPGRpdiBjbGFzcz0iZm9saXVtLW1hcCIgaWQ9Im1hcF83NzM3YTVhZWQ2MzI0OTA0OTkwM2Y5OGE4OGE3ODg0YiIgPjwvZGl2Pgo8L2JvZHk+CjxzY3JpcHQ+ICAgIAogICAgCiAgICAKICAgICAgICB2YXIgYm91bmRzID0gbnVsbDsKICAgIAoKICAgIHZhciBtYXBfNzczN2E1YWVkNjMyNDkwNDk5MDNmOThhODhhNzg4NGIgPSBMLm1hcCgKICAgICAgICAnbWFwXzc3MzdhNWFlZDYzMjQ5MDQ5OTAzZjk4YTg4YTc4ODRiJywgewogICAgICAgIGNlbnRlcjogWzQ1LjAwNjUxNDksIC05My40NjY1MV0sCiAgICAgICAgem9vbTogNiwKICAgICAgICBtYXhCb3VuZHM6IGJvdW5kcywKICAgICAgICBsYXllcnM6IFtdLAogICAgICAgIHdvcmxkQ29weUp1bXA6IGZhbHNlLAogICAgICAgIGNyczogTC5DUlMuRVBTRzM4NTcsCiAgICAgICAgem9vbUNvbnRyb2w6IHRydWUsCiAgICAgICAgfSk7CkwuY29udHJvbC5zY2FsZSgpLmFkZFRvKG1hcF83NzM3YTVhZWQ2MzI0OTA0OTkwM2Y5OGE4OGE3ODg0Yik7CgogICAgCiAgICB2YXIgdGlsZV9sYXllcl9jMTZiZDE5ZDU3MWY0YWM5ODgzMDNmOWJhZDg4ZDUzNiA9IEwudGlsZUxheWVyKAogICAgICAgICdodHRwczovL3tzfS50aWxlLm9wZW5zdHJlZXRtYXAub3JnL3t6fS97eH0ve3l9LnBuZycsCiAgICAgICAgewogICAgICAgICJhdHRyaWJ1dGlvbiI6IG51bGwsCiAgICAgICAgImRldGVjdFJldGluYSI6IGZhbHNlLAogICAgICAgICJtYXhOYXRpdmVab29tIjogMTgsCiAgICAgICAgIm1heFpvb20iOiAxOCwKICAgICAgICAibWluWm9vbSI6IDAsCiAgICAgICAgIm5vV3JhcCI6IGZhbHNlLAogICAgICAgICJvcGFjaXR5IjogMSwKICAgICAgICAic3ViZG9tYWlucyI6ICJhYmMiLAogICAgICAgICJ0bXMiOiBmYWxzZQp9KS5hZGRUbyhtYXBfNzczN2E1YWVkNjMyNDkwNDk5MDNmOThhODhhNzg4NGIpOwogICAgCiAgICAgICAgICAgIHZhciBtZWFzdXJlX2NvbnRyb2xfMDM1YTkwNzhmN2JiNDI3NmE2ZGE5MDBjYWY2NzMwOWYgPSBuZXcgTC5Db250cm9sLk1lYXN1cmUoCiAgICAgICAgICAgIHsicG9zaXRpb24iOiAidG9wcmlnaHQiLCAicHJpbWFyeUxlbmd0aFVuaXQiOiAibWlsZXMiLCAic2Vjb25kYXJ5TGVuZ3RoVW5pdCI6ICJtZXRlcnMiLCAicHJpbWFyeUFyZWFVbml0IjogImFjcmVzIiwgInNlY29uZGFyeUFyZWFVbml0IjogInNxbWV0ZXJzIn0pOwogICAgICAgICAgICBtYXBfNzczN2E1YWVkNjMyNDkwNDk5MDNmOThhODhhNzg4NGIuYWRkQ29udHJvbChtZWFzdXJlX2NvbnRyb2xfMDM1YTkwNzhmN2JiNDI3NmE2ZGE5MDBjYWY2NzMwOWYpOwoKICAgICAgICAKICAgIAogICAgICAgICAgICAgICAgdmFyIHBvbHlfbGluZV80ZmE5NTJmNGNmNzg0MjQ5YjFmYzlhMDQwM2U0ZTIxNCA9IEwucG9seWxpbmUoCiAgICAgICAgICAgICAgICAgICAgW1s0NS4wMDY1MiwgLTkzLjQ2NjMyXSwgWzQ0Ljc5NjQ1LCAtOTMuNDAwMjldLCBbNDQuNTgyMjYsIC05My44MzQ2NV0sIFs0NC4xNjkyOCwgLTk0LjAwNTg4XSwgWzQzLjk3OTA4LCAtOTQuNDM0NjJdLCBbNDMuOTA5MTgsIC05NS4wNTMzNV0sIFs0My41ODUzNiwgLTk1LjY0NjgyXSwgWzQyLjQ0NTg3LCAtOTYuMzM3NzRdLCBbNDIuMjIwOTcsIC05Ny4wMTc3OV0sIFs0MS40Njg3MywgLTk3LjA1OTU4XSwgWzQxLjMwOTU0LCAtOTcuNjc3NTZdLCBbNDAuODI3MjksIC05OC4zNDA2XSwgWzQwLjY5MDczLCAtOTkuNTYwM10sIFs0MS4wOTQ5OSwgLTEwMC42NjQxNF0sIFs0MS4xMTQzMiwgLTEwMS43MzYxMV0sIFs0MC43NTY3OCwgLTEwMi45NzE5N10sIFs0MC4yNzQ5OSwgLTEwMy41NzM5OV0sIFs0MC4xMDM4OCwgLTEwNC41OTg5Ml0sIFszOS42OTU1OSwgLTEwNS4yMDk0NF0sIFszOS43NjYwNywgLTEwNS42Mjg0M10sIFszOS41MDE3MywgLTEwNi4xNjUyM10sIFszOS43MTA3NCwgLTEwNi43MTMzOV0sIFszOS40NzQzLCAtMTA4LjAxOTc1XSwgWzM5LjExNzk4LCAtMTA4LjMyOTU2XSwgWzM5LjIzMjkzLCAtMTA4LjkxMDA0XSwgWzM4LjkzNDE0LCAtMTA5LjQyMDIzXSwgWzM4Ljk5MTY4LCAtMTEwLjE4NDAzXSwgWzM4Ljc1NTU0LCAtMTExLjM4ODg1XSwgWzM4LjkzMzc0LCAtMTExLjg1NzddLCBbMzguNTc5ODQsIC0xMTIuMjgxMzhdLCBbMzguNTc2NjgsIC0xMTIuNjA1MDNdLCBbMzguMTQzOTksIC0xMTIuNjE1ODddLCBbMzYuOTkwNDYsIC0xMTMuNjI3MTFdLCBbMzYuNzQzOTEsIC0xMTQuNDIyNjVdLCBbMzYuMjMwMiwgLTExNS4xMTQzOF0sIFszNS40NjkxMSwgLTExNS40NTM1M10sIFszNC44ODM0MiwgLTExNy4wNjE4NV0sIFszNC43MjM2NCwgLTExNy4xOTMzOV0sIFszNC4zMzM4OSwgLTExNy40ODI0N10sIFszMy42ODM1NywgLTExNy4xNzExN10sIFszMi43MTY3OCwgLTExNy4xNjI5MV1dLAogICAgICAgICAgICAgICAgICAgIHsKICAiYnViYmxpbmdNb3VzZUV2ZW50cyI6IHRydWUsCiAgImNvbG9yIjogImJsdWUiLAogICJkYXNoQXJyYXkiOiBudWxsLAogICJkYXNoT2Zmc2V0IjogbnVsbCwKICAiZmlsbCI6IGZhbHNlLAogICJmaWxsQ29sb3IiOiAiYmx1ZSIsCiAgImZpbGxPcGFjaXR5IjogMC4yLAogICJmaWxsUnVsZSI6ICJldmVub2RkIiwKICAibGluZUNhcCI6ICJyb3VuZCIsCiAgImxpbmVKb2luIjogInJvdW5kIiwKICAibm9DbGlwIjogZmFsc2UsCiAgIm9wYWNpdHkiOiAxLjAsCiAgInNtb290aEZhY3RvciI6IDEuMCwKICAic3Ryb2tlIjogdHJ1ZSwKICAid2VpZ2h0IjogMwp9CiAgICAgICAgICAgICAgICAgICAgKQogICAgICAgICAgICAgICAgICAgIC5hZGRUbyhtYXBfNzczN2E1YWVkNjMyNDkwNDk5MDNmOThhODhhNzg4NGIpOwogICAgICAgICAgICAKPC9zY3JpcHQ+ onload="this.contentDocument.open();this.contentDocument.write(atob(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
 </div>
 
 </div>
 
 </div>
-
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Since $y$ was created as a result of an operation, it has an associated gradient function accessible as <tt>y.grad_fn</tt><br>
+The calculation of $y$ is done as:<br></p>
+<p>$\quad y=2(2)^4+(2)^3+3(2)^2+5(2)+1 = 32+8+12+10+1 = 63$</p>
+<p>This is the value of $y$ when $x=2$.</p>
+<h4 id="step-4-backprop">Step 4. Backprop<a class="anchor-link" href="#Step-4.-Backprop">&#182;</a></h4>
 </div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
-    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">get_routing_map</span><span class="p">(</span><span class="s1">&#39;Ragama, Sri Lanka&#39;</span><span class="p">,</span> <span class="s1">&#39;Kandy, Sri Lanka&#39;</span><span class="p">)</span>
+    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">y</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="step-5-display-the-resulting-gradient">Step 5. Display the resulting gradient<a class="anchor-link" href="#Step-5.-Display-the-resulting-gradient">&#182;</a></h4>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">grad</span><span class="p">)</span>
 </pre></div>
 
         </div>
@@ -14922,40 +15279,34 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>123.43166666666666 minutes
-64.9220226849 miles
+<pre>tensor(93.)
 </pre>
 </div>
 </div>
 
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[&nbsp;]:</div>
-
-
-
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html">
-<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe src="about:blank" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" data-html=PCFET0NUWVBFIGh0bWw+CjxoZWFkPiAgICAKICAgIDxtZXRhIGh0dHAtZXF1aXY9ImNvbnRlbnQtdHlwZSIgY29udGVudD0idGV4dC9odG1sOyBjaGFyc2V0PVVURi04IiAvPgogICAgPHNjcmlwdD5MX1BSRUZFUl9DQU5WQVM9ZmFsc2U7IExfTk9fVE9VQ0g9ZmFsc2U7IExfRElTQUJMRV8zRD1mYWxzZTs8L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvbnBtL2xlYWZsZXRAMS40LjAvZGlzdC9sZWFmbGV0LmpzIj48L3NjcmlwdD4KICAgIDxzY3JpcHQgc3JjPSJodHRwczovL2NvZGUuanF1ZXJ5LmNvbS9qcXVlcnktMS4xMi40Lm1pbi5qcyI+PC9zY3JpcHQ+CiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvMy4yLjAvanMvYm9vdHN0cmFwLm1pbi5qcyI+PC9zY3JpcHQ+CiAgICA8c2NyaXB0IHNyYz0iaHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYnMvTGVhZmxldC5hd2Vzb21lLW1hcmtlcnMvMi4wLjIvbGVhZmxldC5hd2Vzb21lLW1hcmtlcnMuanMiPjwvc2NyaXB0PgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL2Nkbi5qc2RlbGl2ci5uZXQvbnBtL2xlYWZsZXRAMS40LjAvZGlzdC9sZWFmbGV0LmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL21heGNkbi5ib290c3RyYXBjZG4uY29tL2Jvb3RzdHJhcC8zLjIuMC9jc3MvYm9vdHN0cmFwLm1pbi5jc3MiLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9tYXhjZG4uYm9vdHN0cmFwY2RuLmNvbS9ib290c3RyYXAvMy4yLjAvY3NzL2Jvb3RzdHJhcC10aGVtZS5taW4uY3NzIi8+CiAgICA8bGluayByZWw9InN0eWxlc2hlZXQiIGhyZWY9Imh0dHBzOi8vbWF4Y2RuLmJvb3RzdHJhcGNkbi5jb20vZm9udC1hd2Vzb21lLzQuNi4zL2Nzcy9mb250LWF3ZXNvbWUubWluLmNzcyIvPgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL2NkbmpzLmNsb3VkZmxhcmUuY29tL2FqYXgvbGlicy9MZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy8yLjAuMi9sZWFmbGV0LmF3ZXNvbWUtbWFya2Vycy5jc3MiLz4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9yYXdjZG4uZ2l0aGFjay5jb20vcHl0aG9uLXZpc3VhbGl6YXRpb24vZm9saXVtL21hc3Rlci9mb2xpdW0vdGVtcGxhdGVzL2xlYWZsZXQuYXdlc29tZS5yb3RhdGUuY3NzIi8+CiAgICA8c3R5bGU+aHRtbCwgYm9keSB7d2lkdGg6IDEwMCU7aGVpZ2h0OiAxMDAlO21hcmdpbjogMDtwYWRkaW5nOiAwO308L3N0eWxlPgogICAgPHN0eWxlPiNtYXAge3Bvc2l0aW9uOmFic29sdXRlO3RvcDowO2JvdHRvbTowO3JpZ2h0OjA7bGVmdDowO308L3N0eWxlPgogICAgCiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLAogICAgICAgIGluaXRpYWwtc2NhbGU9MS4wLCBtYXhpbXVtLXNjYWxlPTEuMCwgdXNlci1zY2FsYWJsZT1ubyIgLz4KICAgIDxzdHlsZT4jbWFwXzlhMmIxNGI0MjcyZjRhM2Y4MzY5N2YyNGRiYzVhZGZhIHsKICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7CiAgICAgICAgd2lkdGg6IDEwMC4wJTsKICAgICAgICBoZWlnaHQ6IDEwMC4wJTsKICAgICAgICBsZWZ0OiAwLjAlOwogICAgICAgIHRvcDogMC4wJTsKICAgICAgICB9CiAgICA8L3N0eWxlPgogICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vcmF3Y2RuLmdpdGhhY2suY29tL2xqYWdpcy9sZWFmbGV0LW1lYXN1cmUvMi4xLjcvZGlzdC9sZWFmbGV0LW1lYXN1cmUuanMiPjwvc2NyaXB0PgogICAgPGxpbmsgcmVsPSJzdHlsZXNoZWV0IiBocmVmPSJodHRwczovL3Jhd2Nkbi5naXRoYWNrLmNvbS9samFnaXMvbGVhZmxldC1tZWFzdXJlLzIuMS43L2Rpc3QvbGVhZmxldC1tZWFzdXJlLmNzcyIvPgo8L2hlYWQ+Cjxib2R5PiAgICAKICAgIAogICAgPGRpdiBjbGFzcz0iZm9saXVtLW1hcCIgaWQ9Im1hcF85YTJiMTRiNDI3MmY0YTNmODM2OTdmMjRkYmM1YWRmYSIgPjwvZGl2Pgo8L2JvZHk+CjxzY3JpcHQ+ICAgIAogICAgCiAgICAKICAgICAgICB2YXIgYm91bmRzID0gbnVsbDsKICAgIAoKICAgIHZhciBtYXBfOWEyYjE0YjQyNzJmNGEzZjgzNjk3ZjI0ZGJjNWFkZmEgPSBMLm1hcCgKICAgICAgICAnbWFwXzlhMmIxNGI0MjcyZjRhM2Y4MzY5N2YyNGRiYzVhZGZhJywgewogICAgICAgIGNlbnRlcjogWzcuMDI4NDM5MiwgNzkuOTIxOTc3Nl0sCiAgICAgICAgem9vbTogNiwKICAgICAgICBtYXhCb3VuZHM6IGJvdW5kcywKICAgICAgICBsYXllcnM6IFtdLAogICAgICAgIHdvcmxkQ29weUp1bXA6IGZhbHNlLAogICAgICAgIGNyczogTC5DUlMuRVBTRzM4NTcsCiAgICAgICAgem9vbUNvbnRyb2w6IHRydWUsCiAgICAgICAgfSk7CkwuY29udHJvbC5zY2FsZSgpLmFkZFRvKG1hcF85YTJiMTRiNDI3MmY0YTNmODM2OTdmMjRkYmM1YWRmYSk7CgogICAgCiAgICB2YXIgdGlsZV9sYXllcl9mOTZmNmQ5ZDMwODE0NTllYmUzMThkZTA2MWZiOGIzNCA9IEwudGlsZUxheWVyKAogICAgICAgICdodHRwczovL3tzfS50aWxlLm9wZW5zdHJlZXRtYXAub3JnL3t6fS97eH0ve3l9LnBuZycsCiAgICAgICAgewogICAgICAgICJhdHRyaWJ1dGlvbiI6IG51bGwsCiAgICAgICAgImRldGVjdFJldGluYSI6IGZhbHNlLAogICAgICAgICJtYXhOYXRpdmVab29tIjogMTgsCiAgICAgICAgIm1heFpvb20iOiAxOCwKICAgICAgICAibWluWm9vbSI6IDAsCiAgICAgICAgIm5vV3JhcCI6IGZhbHNlLAogICAgICAgICJvcGFjaXR5IjogMSwKICAgICAgICAic3ViZG9tYWlucyI6ICJhYmMiLAogICAgICAgICJ0bXMiOiBmYWxzZQp9KS5hZGRUbyhtYXBfOWEyYjE0YjQyNzJmNGEzZjgzNjk3ZjI0ZGJjNWFkZmEpOwogICAgCiAgICAgICAgICAgIHZhciBtZWFzdXJlX2NvbnRyb2xfZjU0MDMwZDY0ZmUxNGU4Yjg1M2I0ODIyMThmMmJkYjAgPSBuZXcgTC5Db250cm9sLk1lYXN1cmUoCiAgICAgICAgICAgIHsicG9zaXRpb24iOiAidG9wcmlnaHQiLCAicHJpbWFyeUxlbmd0aFVuaXQiOiAibWlsZXMiLCAic2Vjb25kYXJ5TGVuZ3RoVW5pdCI6ICJtZXRlcnMiLCAicHJpbWFyeUFyZWFVbml0IjogImFjcmVzIiwgInNlY29uZGFyeUFyZWFVbml0IjogInNxbWV0ZXJzIn0pOwogICAgICAgICAgICBtYXBfOWEyYjE0YjQyNzJmNGEzZjgzNjk3ZjI0ZGJjNWFkZmEuYWRkQ29udHJvbChtZWFzdXJlX2NvbnRyb2xfZjU0MDMwZDY0ZmUxNGU4Yjg1M2I0ODIyMThmMmJkYjApOwoKICAgICAgICAKICAgIAogICAgICAgICAgICAgICAgdmFyIHBvbHlfbGluZV83ZDJhN2JmNjgwY2I0OTkzYjQwMWMyNGM3YWI1YTlhYiA9IEwucG9seWxpbmUoCiAgICAgICAgICAgICAgICAgICAgW1s3LjAyODQyLCA3OS45MjE5MV0sIFs3LjAyMDQ1LCA3OS45MzYxMl0sIFs3LjAwMzE1LCA3OS45NDM5NF0sIFs3LjAwODY2LCA3OS45NjQ3XSwgWzcuMDU1MjEsIDgwLjAwODE2XSwgWzcuMDcxOTIsIDgwLjAxNDYxXSwgWzcuMDg2OCwgODAuMDM0NDJdLCBbNy4xMDgyNywgODAuMDQ1NjVdLCBbNy4xMzI3MSwgODAuMDc4MjhdLCBbNy4xMzcyMSwgODAuMDkyMzJdLCBbNy4xNTIyMiwgODAuMTAzMjRdLCBbNy4xNTc5OCwgODAuMTE4MjldLCBbNy4xODY3MSwgODAuMTMzNV0sIFs3LjE4MzAxLCA4MC4xNDg3XSwgWzcuMTk4NjEsIDgwLjE1NTAxXSwgWzcuMjAxNDUsIDgwLjE3MTI2XSwgWzcuMjQxMzUsIDgwLjIwOTkxXSwgWzcuMjMwNjcsIDgwLjIxNzg2XSwgWzcuMjM5MzEsIDgwLjIzMzAxXSwgWzcuMjMxMDcsIDgwLjI0NDk4XSwgWzcuMjM3NjIsIDgwLjI3MDYzXSwgWzcuMjM0OTYsIDgwLjMxNDM3XSwgWzcuMjM3NTcsIDgwLjMyMjEzXSwgWzcuMjUxNiwgODAuMzIzNl0sIFs3LjI1NDg4LCA4MC4zNTM1Nl0sIFs3LjI1MDczLCA4MC4zNzA2NV0sIFs3LjI1Njg2LCA4MC40MDQ2M10sIFs3LjI1NDQ5LCA4MC40MTUwNV0sIFs3LjI0NzMsIDgwLjQxODUyXSwgWzcuMjU0MzksIDgwLjQ0NTM0XSwgWzcuMjQ3MDUsIDgwLjQ2NTFdLCBbNy4yNTYyMywgODAuNDg5ODRdLCBbNy4yNTE0NCwgODAuNTA5MV0sIFs3LjI2NjEzLCA4MC41NTI5OV0sIFs3LjI2ODg1LCA4MC41Nzk4OF0sIFs3LjI2NDI5LCA4MC41OTQ0Nl0sIFs3LjI5MywgODAuNjM1MDZdXSwKICAgICAgICAgICAgICAgICAgICB7CiAgImJ1YmJsaW5nTW91c2VFdmVudHMiOiB0cnVlLAogICJjb2xvciI6ICJibHVlIiwKICAiZGFzaEFycmF5IjogbnVsbCwKICAiZGFzaE9mZnNldCI6IG51bGwsCiAgImZpbGwiOiBmYWxzZSwKICAiZmlsbENvbG9yIjogImJsdWUiLAogICJmaWxsT3BhY2l0eSI6IDAuMiwKICAiZmlsbFJ1bGUiOiAiZXZlbm9kZCIsCiAgImxpbmVDYXAiOiAicm91bmQiLAogICJsaW5lSm9pbiI6ICJyb3VuZCIsCiAgIm5vQ2xpcCI6IGZhbHNlLAogICJvcGFjaXR5IjogMS4wLAogICJzbW9vdGhGYWN0b3IiOiAxLjAsCiAgInN0cm9rZSI6IHRydWUsCiAgIndlaWdodCI6IDMKfQogICAgICAgICAgICAgICAgICAgICkKICAgICAgICAgICAgICAgICAgICAuYWRkVG8obWFwXzlhMmIxNGI0MjcyZjRhM2Y4MzY5N2YyNGRiYzVhZGZhKTsKICAgICAgICAgICAgCjwvc2NyaXB0Pg== onload="this.contentDocument.open();this.contentDocument.write(atob(this.getAttribute('data-html')));this.contentDocument.close();" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
 </div>
 
 </div>
 
 </div>
-
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>Note that <tt>x.grad</tt> is an attribute of tensor $x$, so we don't use parentheses. The computation is the result of<br></p>
+<p>$\quad y'=8(2)^3+3(2)^2+6(2)+5 = 64+12+12+5 = 93$</p>
+<p>This is the slope of the polynomial at the point $(2,63)$.</p>
+<h2 id="back-propagation-on-multiple-steps">Back-propagation on multiple steps<a class="anchor-link" href="#Back-propagation-on-multiple-steps">&#182;</a></h2><p>Now let's do something more complex, involving layers $y$ and $z$ between $x$ and our output layer $out$.</p>
+<h4 id="1-create-a-tensor">1. Create a tensor<a class="anchor-link" href="#1.-Create-a-tensor">&#182;</a></h4>
 </div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
-    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">geocoder</span>
-<span class="n">g</span> <span class="o">=</span> <span class="n">geocoder</span><span class="o">.</span><span class="n">arcgis</span><span class="p">(</span><span class="s1">&#39;Redlands, CA&#39;</span><span class="p">)</span>
-<span class="n">g</span><span class="o">.</span><span class="n">json</span>
+    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">tensor</span><span class="p">([[</span><span class="mf">1.</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],[</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]],</span> <span class="n">requires_grad</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
         </div>
@@ -14972,29 +15323,14 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link {
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-
-
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
-<pre>{&#39;address&#39;: &#39;Redlands, California&#39;,
- &#39;bbox&#39;: {&#39;northeast&#39;: [34.12838000000007, -117.10958999999995],
-  &#39;southwest&#39;: [33.98238000000007, -117.25558999999994]},
- &#39;confidence&#39;: 2,
- &#39;lat&#39;: 34.05538000000007,
- &#39;lng&#39;: -117.18258999999995,
- &#39;ok&#39;: True,
- &#39;quality&#39;: &#39;Locality&#39;,
- &#39;raw&#39;: {&#39;extent&#39;: {&#39;xmax&#39;: -117.10958999999995,
-   &#39;xmin&#39;: -117.25558999999994,
-   &#39;ymax&#39;: 34.12838000000007,
-   &#39;ymin&#39;: 33.98238000000007},
-  &#39;feature&#39;: {&#39;attributes&#39;: {&#39;Addr_Type&#39;: &#39;Locality&#39;, &#39;Score&#39;: 100},
-   &#39;geometry&#39;: {&#39;x&#39;: -117.18258999999995, &#39;y&#39;: 34.05538000000007}},
-  &#39;name&#39;: &#39;Redlands, California&#39;},
- &#39;score&#39;: 100,
- &#39;status&#39;: &#39;OK&#39;}</pre>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>tensor([[1., 2., 3.],
+        [3., 2., 1.]], requires_grad=True)
+</pre>
+</div>
 </div>
 
 </div>
@@ -15002,16 +15338,20 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link {
 </div>
 
 </div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="2-create-the-first-layer-with-y-3x2">2. Create the first layer with $y = 3x+2$<a class="anchor-link" href="#2.-Create-the-first-layer-with-$y-=-3x+2$">&#182;</a></h4>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
     <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
         
         
         <div class="CodeMirror cm-s-jupyter">
-    <div class=" highlight highlight-ipynb hl-python"><pre><span></span>
+    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
         </div>
@@ -15020,6 +15360,201 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link {
 </div>
 </div>
 
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>tensor([[ 5.,  8., 11.],
+        [11.,  8.,  5.]], grad_fn=&lt;AddBackward0&gt;)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="3-create-the-second-layer-with-z-2y2">3. Create the second layer with $z = 2y^2$<a class="anchor-link" href="#3.-Create-the-second-layer-with-$z-=-2y^2$">&#182;</a></h4>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">z</span> <span class="o">=</span> <span class="mi">2</span><span class="o">*</span><span class="n">y</span><span class="o">**</span><span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>tensor([[ 50., 128., 242.],
+        [242., 128.,  50.]], grad_fn=&lt;MulBackward0&gt;)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="4-set-the-output-to-be-the-matrix-mean">4. Set the output to be the matrix mean<a class="anchor-link" href="#4.-Set-the-output-to-be-the-matrix-mean">&#182;</a></h4>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">out</span> <span class="o">=</span> <span class="n">z</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">out</span><span class="p">)</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>tensor(140., grad_fn=&lt;MeanBackward1&gt;)
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h4 id="5-now-perform-back-propagation-to-find-the-gradient-of-x-wrt-out">5. Now perform back-propagation to find the gradient of x w.r.t out<a class="anchor-link" href="#5.-Now-perform-back-propagation-to-find-the-gradient-of-x-w.r.t-out">&#182;</a></h4><p>(If you haven't seen it before, w.r.t. is an abbreviation of <em>with respect to</em>)</p>
+
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+    <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+        
+        
+        <div class="CodeMirror cm-s-jupyter">
+    <div class=" highlight highlight-ipynb hl-python"><pre><span></span><span class="n">out</span><span class="o">.</span><span class="n">backward</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">grad</span><span class="p">)</span>
+</pre></div>
+
+        </div>
+    </div>
+
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>tensor([[10., 16., 22.],
+        [22., 16., 10.]])
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p>You should see a 2x3 matrix. If we call the final <tt>out</tt> tensor "$o$", we can calculate the partial derivative of $o$ with respect to $x_i$ as follows:<br></p>
+<p>$o = \frac {1} {6}\sum_{i=1}^{6} z_i$<br></p>
+<p>$z_i = 2(y_i)^2 = 2(3x_i+2)^2$<br></p>
+<p>To solve the derivative of $z_i$ we use the <a href='https://en.wikipedia.org/wiki/Chain_rule'>chain rule</a>, where the derivative of $f(g(x)) = f'(g(x))g'(x)$<br></p>
+<p>In this case<br></p>
+<p>$\begin{split} f(g(x)) &amp;= 2(g(x))^2, \quad &amp;f'(g(x)) = 4g(x) \\
+g(x) &amp;= 3x+2, &amp;g'(x) = 3 \\
+\frac {dz} {dx} &amp;= 4g(x)\times 3 &amp;= 12(3x+2) \end{split}$</p>
+<p>Therefore,<br></p>
+<p>$\frac{\partial o}{\partial x_i} = \frac{1}{6}\times 12(3x+2)$<br></p>
+<p>$\frac{\partial o}{\partial x_i}\bigr\rvert_{x_i=1} = 2(3(1)+2) = 10$</p>
+<p>$\frac{\partial o}{\partial x_i}\bigr\rvert_{x_i=2} = 2(3(2)+2) = 16$</p>
+<p>$\frac{\partial o}{\partial x_i}\bigr\rvert_{x_i=3} = 2(3(3)+2) = 22$</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h2 id="turn-off-tracking">Turn off tracking<a class="anchor-link" href="#Turn-off-tracking">&#182;</a></h2><p>There may be times when we don't want or need to track the computational history.</p>
+<p>You can reset a tensor's <tt>requires_grad</tt> attribute in-place using <code>.requires_grad_(True)</code> (or False) as needed.</p>
+<p>When performing evaluations, it's often helpful to wrap a set of operations in <code>with torch.no_grad():</code></p>
+<p>A less-used method is to run <code>.detach()</code> on a tensor to prevent future computations from being tracked. This can be handy when cloning a tensor.</p>
+
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<div class="alert alert-info"><strong>A NOTE ABOUT TENSORS AND VARIABLES:</strong> Prior to PyTorch v0.4.0 (April 2018) Tensors (<tt>torch.Tensor</tt>) only held data, and tracking history was reserved for the Variable wrapper (<tt>torch.autograd.Variable</tt>). Since v0.4.0 tensors and variables have merged, and tracking functionality is now available through the <tt>requires_grad=True</tt> flag.</div>
+</div>
+</div>
+<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<p><a href="https://colab.research.google.com/github/shanaka-desoysa/notes/blob/master/content/deep_learning/pytorch/gradients.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
+
+</div>
 </div>
 </body>
 
@@ -15044,7 +15579,7 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link {
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../TensorFlow/Using_TensorFlow_DataSets/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../OSRM/Open_Source_Routing_Machine/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -15053,19 +15588,19 @@ h1:hover .anchor-link, h2:hover .anchor-link, h3:hover .anchor-link {
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Using TensorFlow DataSets
+                Open Source Routing Machine
               </div>
             </div>
           </a>
         
         
-          <a href="../../pandas/Pandas_Value_Counts/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../tensor_basics/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Pandas Value Counts
+                Tensor basics
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

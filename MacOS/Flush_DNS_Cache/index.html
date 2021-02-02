@@ -6,7 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Flush DNS Cache on Mac OS X 12 (Sierra) and Later">
       
+      
+      
+        <meta name="author" content="Shanaka DeSoysa">
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
@@ -14,7 +18,7 @@
     
     
       
-        <title>Symbolic link - Notes</title>
+        <title>Flush DNS Cache on Mac OS - Notes</title>
       
     
     
@@ -64,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#symbolic-link" class="md-skip">
+        <a href="#flush-dns-cache-on-mac-os-x-12-sierra-and-later" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +100,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Symbolic link
+              Flush DNS Cache on Mac OS
             
           </span>
         </div>
@@ -232,14 +236,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
       
       <label class="md-nav__link" for="nav-3">
         Linux
@@ -258,7 +260,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Change_Ownership/" class="md-nav__link">
+      <a href="../../Linux/Change_Ownership/" class="md-nav__link">
         Change Ownership of Files
       </a>
     </li>
@@ -270,7 +272,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Dictionary_Words/" class="md-nav__link">
+      <a href="../../Linux/Dictionary_Words/" class="md-nav__link">
         Unix Dictionary Words File
       </a>
     </li>
@@ -280,20 +282,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Linux/Symbolic_Link/" class="md-nav__link">
         Symbolic link
       </a>
-      
     </li>
   
 
@@ -310,12 +303,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
       
       <label class="md-nav__link" for="nav-4">
         MacOS
@@ -332,11 +327,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../MacOS/Flush_DNS_Cache/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Flush DNS Cache on Mac OS
       </a>
+      
     </li>
   
 
@@ -768,10 +772,13 @@
               
                 
                 
-                <h1 id="symbolic-link">Symbolic link<a class="headerlink" href="#symbolic-link" title="Permanent link">&para;</a></h1>
-<p><a href="https://en.wikipedia.org/wiki/Symbolic_link">Symbolic link</a> In computing, a symbolic link (also symlink or soft link) is a term for any file that contains a reference to another file or directory in the form of an absolute or relative path and that affects pathname resolution.</p>
-<div class="highlight"><pre><span></span><code>readlink /usr/share/dict/words
+                <h1 id="flush-dns-cache-on-mac-os-x-12-sierra-and-later">Flush DNS Cache on Mac OS X 12 (Sierra) and Later<a class="headerlink" href="#flush-dns-cache-on-mac-os-x-12-sierra-and-later" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>sudo killall -HUP mDNSResponder<span class="p">;</span> <span class="se">\</span>
+sudo killall mDNSResponderHelper<span class="p">;</span> <span class="se">\</span>
+sudo dscacheutil -flushcache
 </code></pre></div>
+                
+                  
                 
               
               
@@ -790,7 +797,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../Dictionary_Words/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../Linux/Symbolic_Link/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -799,19 +806,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Unix Dictionary Words File
+                Symbolic link
               </div>
             </div>
           </a>
         
         
-          <a href="../../MacOS/Flush_DNS_Cache/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Network_Security/ARP_Spoofing/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Flush DNS Cache on Mac OS
+                Kali Linux ARP Spoofing
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

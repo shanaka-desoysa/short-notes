@@ -841,7 +841,7 @@
                 
                 
                 <h1 id="package-sizes-installed-with-pip">Package Sizes Installed with pip<a class="headerlink" href="#package-sizes-installed-with-pip" title="Permanent link">&para;</a></h1>
-<p>List pf pip packages and the sizes orderd in largest to smallest.</p>
+<p>List of <code>pip</code> packages and the sizes.</p>
 <h2 id="descending-order">Descending Order<a class="headerlink" href="#descending-order" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>pip list --format freeze <span class="p">|</span> <span class="se">\</span>
 awk -F <span class="o">=</span> <span class="o">{</span><span class="s1">&#39;print $1&#39;</span><span class="o">}</span> <span class="p">|</span> <span class="se">\</span>

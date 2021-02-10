@@ -6,7 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Random Password Generator using openssl">
       
+      
+      
+        <meta name="author" content="Shanaka DeSoysa">
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
@@ -14,7 +18,7 @@
     
     
       
-        <title>Blockchain Explained in 7 Simple Functions - Notes</title>
+        <title>Random Password Generator - Notes</title>
       
     
     
@@ -64,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#blockchain-explained-in-7-simple-functions" class="md-skip">
+        <a href="#random-password-generator-using-openssl" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +100,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Blockchain Explained in 7 Simple Functions
+              Random Password Generator
             
           </span>
         </div>
@@ -189,14 +193,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" >
       
       <label class="md-nav__link" for="nav-2">
         BlockChain
@@ -213,112 +215,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Blockchain Explained in 7 Simple Functions
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../BlockChain/Blockchain_Explained_in_7_Simple_Functions/" class="md-nav__link">
         Blockchain Explained in 7 Simple Functions
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#hashing-function" class="md-nav__link">
-    Hashing Function
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#state-management" class="md-nav__link">
-    State Management
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transaction-validation" class="md-nav__link">
-    Transaction Validation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#make-block" class="md-nav__link">
-    Make Block
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#check-block-hash" class="md-nav__link">
-    Check Block Hash
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#block-validity" class="md-nav__link">
-    Block Validity
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#check-blockchain" class="md-nav__link">
-    Check Blockchain
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-transaction" class="md-nav__link">
-    Add transaction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    References
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -335,12 +236,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
       
       <label class="md-nav__link" for="nav-3">
         Linux
@@ -359,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linux/Change_Ownership/" class="md-nav__link">
+      <a href="../Change_Ownership/" class="md-nav__link">
         Change Ownership of Files
       </a>
     </li>
@@ -371,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linux/Dictionary_Words/" class="md-nav__link">
+      <a href="../Dictionary_Words/" class="md-nav__link">
         Unix Dictionary Words File
       </a>
     </li>
@@ -381,11 +284,56 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Linux/Random_Password/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Random Password Generator
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Random Password Generator
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#password-with-hexadecimal-characters" class="md-nav__link">
+    Password with Hexadecimal Characters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#password-with-base64-characters" class="md-nav__link">
+    Password with Base64 Characters
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -395,7 +343,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Linux/Symbolic_Link/" class="md-nav__link">
+      <a href="../Symbolic_Link/" class="md-nav__link">
         Symbolic link
       </a>
     </li>
@@ -880,71 +828,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#hashing-function" class="md-nav__link">
-    Hashing Function
+  <a href="#password-with-hexadecimal-characters" class="md-nav__link">
+    Password with Hexadecimal Characters
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#state-management" class="md-nav__link">
-    State Management
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#transaction-validation" class="md-nav__link">
-    Transaction Validation
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#make-block" class="md-nav__link">
-    Make Block
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#check-block-hash" class="md-nav__link">
-    Check Block Hash
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#block-validity" class="md-nav__link">
-    Block Validity
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#check-blockchain" class="md-nav__link">
-    Check Blockchain
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-transaction" class="md-nav__link">
-    Add transaction
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#references" class="md-nav__link">
-    References
+  <a href="#password-with-base64-characters" class="md-nav__link">
+    Password with Base64 Characters
   </a>
   
 </li>
@@ -962,411 +854,17 @@
               
                 
                 
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script>
-(function() {
-  function addWidgetsRenderer() {
-    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
-    var scriptElement = document.createElement('script');
-    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
-    var widgetState;
-
-    // Fallback for older version:
-    try {
-      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
-
-      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
-        widgetRendererSrc = 'jupyter-js-widgets@*/dist/embed.js';
-      }
-    } catch(e) {}
-
-    scriptElement.src = widgetRendererSrc;
-    document.body.appendChild(scriptElement);
-  }
-
-  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
-}());
-</script>
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://colab.research.google.com/github/shanaka-desoysa/short-notes/blob/main/docs/blockchain/Blockchain_Explained_in_7_Simple_Functions.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<hr />
-<h1 id="blockchain-explained-in-7-simple-functions">Blockchain Explained in 7 Simple Functions<a class="headerlink" href="#blockchain-explained-in-7-simple-functions" title="Permanent link">&para;</a></h1>
-<hr />
-<p>Practical hands-on guide to implement your own blockchain with 7 simple Python functions.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="hashing-function">Hashing Function<a class="headerlink" href="#hashing-function" title="Permanent link">&para;</a></h2>
-<p>At the heart of the blockchain is the hashing function. Without encryption, the blockchain will be easily manipulable and transactions will be able to be fraudulently inserted. Here we're using a simple MD5 hashing algorithm. If you're interested in what's actually being used in bitcoin, read <a href="https://en.bitcoin.it/wiki/Block_hashing_algorithm">here</a>.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>import hashlib
-import json
-
-def hash_function(k):
-    &quot;&quot;&quot;Hashes our transaction.&quot;&quot;&quot;
-    if type(k) is not str:
-        k = json.dumps(k, sort_keys=True)
-
-    return hashlib.sha256(k.encode(&#39;utf-8&#39;)).hexdigest()
+                <h1 id="random-password-generator-using-openssl">Random Password Generator using <code>openssl</code><a class="headerlink" href="#random-password-generator-using-openssl" title="Permanent link">&para;</a></h1>
+<h2 id="password-with-hexadecimal-characters">Password with Hexadecimal Characters<a class="headerlink" href="#password-with-hexadecimal-characters" title="Permanent link">&para;</a></h2>
+<p>Specify number of characters, 32 in this example.</p>
+<div class="highlight"><pre><span></span><code>openssl rand -hex <span class="m">32</span>
 </code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>hash_function(&#39;www.geni.ai&#39;)
+<h2 id="password-with-base64-characters">Password with Base64 Characters<a class="headerlink" href="#password-with-base64-characters" title="Permanent link">&para;</a></h2>
+<p>Specify number of characters, 16 in this example.</p>
+<div class="highlight"><pre><span></span><code>openssl rand -base64 <span class="m">16</span>
 </code></pre></div>
-
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_text output_subarea output_execute_result">
-<pre>
-<code>&#39;8bfae4a2d420bce8036bd69ed798765a00e103901b7389386373315d7506143f&#39;</code>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="state-management">State Management<a class="headerlink" href="#state-management" title="Permanent link">&para;</a></h2>
-<p>The ‘state’ is the record of who owns what. For example, <em><a href="https://www.geni.ai">Geni AI</a></em> have 100 coins and give 5 to <em>John Smith</em>, then the state will be the value of the dictionary below.</p>
-<p><code>{'transaction': {'Geni AI': 95, 'John Smith': 5}}</code></p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>def update_state(transaction, state):
-    state = state.copy()
-
-    for key in transaction:
-        if key in state.keys():
-            state[key] += transaction[key]
-        else:
-            state[key] = transaction[key]
-
-    return state
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="transaction-validation">Transaction Validation<a class="headerlink" href="#transaction-validation" title="Permanent link">&para;</a></h2>
-<p>The important thing to note is that overdrafts cannot exist. If there are only 10 coins in existence, then I cannot give 11 coins to someone. The below function verifies that the transaction we attempt to make is indeed valid. Also, a transaction must balance. I cannot give 5 coins and have the recipient receive 4 coins, since that would allow the destruction and creation of coins.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>def valid_transaction(transaction, state):
-    &quot;&quot;&quot;A valid transaction must sum to 0.&quot;&quot;&quot;
-    if sum(transaction.values()) is not 0:
-        return False
-
-    for key in transaction.keys():
-        if key in state.keys():
-            account_balance = state[key]
-        else:
-            account_balance = 0
-
-        if account_balance + transaction[key] &lt; 0:
-            return False
-
-    return True
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="make-block">Make Block<a class="headerlink" href="#make-block" title="Permanent link">&para;</a></h2>
-<p>Now, we can make our block. The information from the previous block is read, and used to link it to the new block. This, too, is central to the idea of blockchain. Seemingly valid transactions can be attempted to fraudulently be inserted into the blockchain, but decrypting all the previous blocks is computationally (nearly) impossible, which preserves the integrity of the blockchain.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>def make_block(transactions, chain):
-    &quot;&quot;&quot;Make a block to go into the chain.&quot;&quot;&quot;
-    parent_hash = chain[-1][&#39;hash&#39;]
-    block_number = chain[-1][&#39;contents&#39;][&#39;block_number&#39;] + 1
-
-    block_contents = {
-        &#39;block_number&#39;: block_number,
-        &#39;parent_hash&#39;: parent_hash,
-        &#39;transaction_count&#39;: block_number + 1,
-        &#39;transaction&#39;: transactions
-    }
-
-    return {&#39;hash&#39;: hash_function(block_contents), &#39;contents&#39;: block_contents}
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="check-block-hash">Check Block Hash<a class="headerlink" href="#check-block-hash" title="Permanent link">&para;</a></h2>
-<p>Below is a small helper function to check the hash of the previous block:</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>def check_block_hash(block):
-    expected_hash = hash_function(block[&#39;contents&#39;])
-
-    if block[&#39;hash&#39;] is not expected_hash:
-        raise
-
-    return
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="block-validity">Block Validity<a class="headerlink" href="#block-validity" title="Permanent link">&para;</a></h2>
-<p>Once we have assembled everything together, its time to create our block. We will now update the blockchain.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>def check_block_validity(block, parent, state):
-    parent_number = parent[&#39;contents&#39;][&#39;block_number&#39;]
-    parent_hash = parent[&#39;hash&#39;]
-    block_number = block[&#39;contents&#39;][&#39;block_number&#39;]
-
-    for transaction in block[&#39;contents&#39;][&#39;transaction&#39;]:
-        if valid_transaction(transaction, state):
-            state = update_state(transaction, state)
-        else:
-            raise
-
-    check_block_hash(block)  # Check hash integrity
-
-    if block_number is not parent_number + 1:
-        raise
-
-    if block[&#39;contents&#39;][&#39;parent_hash&#39;] is not parent_hash:
-        raise
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="check-blockchain">Check Blockchain<a class="headerlink" href="#check-blockchain" title="Permanent link">&para;</a></h2>
-<p>Before we are finished, the chain must be verified:</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>def check_chain(chain):
-    &quot;&quot;&quot;Check the chain is valid.&quot;&quot;&quot;
-    if type(chain) is str:
-        try:
-            chain = json.loads(chain)
-            assert (type(chain) == list)
-        except ValueError:
-            # String passed in was not valid JSON
-            return False
-    elif type(chain) is not list:
-        return False
-
-    state = {}
-
-    for transaction in chain[0][&#39;contents&#39;][&#39;transaction&#39;]:
-        state = update_state(transaction, state)
-
-    check_block_hash(chain[0])
-    parent = chain[0]
-
-    for block in chain[1:]:
-        state = check_block_validity(block, parent, state)
-        parent = block
-
-    return state
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="add-transaction">Add transaction<a class="headerlink" href="#add-transaction" title="Permanent link">&para;</a></h2>
-<p>Finally, need a transaction function, which hangs all of the above together:</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>def add_transaction_to_chain(transaction, state, chain):
-    if valid_transaction(transaction, state):
-        state = update_state(transaction, state)
-    else:
-        raise Exception(&#39;Invalid transaction.&#39;)
-
-    my_block = make_block(state, chain)
-    chain.append(my_block)
-
-    for transaction in chain:
-        check_chain(transaction)
-
-    return state, chain
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<p>So, now we have our 7 functions. How do we interact with it? Well, first we need to start our chain with a Genesis Block. This is the inception of our new coin (or stock inventory, etc). </p>
-<p>For the purposes of this article, I will say that I, Tom, will start off with 10 coins.
-Let's say we start off with 100 coins for <em><a href="https://www.geni.ai">Geni AI</a></em>.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>genesis_block = {
-    &#39;hash&#39;: hash_function({
-        &#39;block_number&#39;: 0,
-        &#39;parent_hash&#39;: None,
-        &#39;transaction_count&#39;: 1,
-        &#39;transaction&#39;: [{&#39;Geni AI&#39;: 100}]
-    }),
-    &#39;contents&#39;: {
-        &#39;block_number&#39;: 0,
-        &#39;parent_hash&#39;: None,
-        &#39;transaction_count&#39;: 1,
-        &#39;transaction&#39;: [{&#39;Geni AI&#39;: 100}]
-    },
-}
-
-block_chain = [genesis_block]
-chain_state = {&#39;Geni AI&#39;: 100}
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Now, look what happens when <em><a href="https://www.geni.ai">Geni AI</a></em> give some coins to user <em>John Smith</em>:</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>chain_state, block_chain = add_transaction_to_chain(transaction={&#39;Geni AI&#39;: -5, &#39;John Smith&#39;: 5}, state=chain_state, chain=block_chain)
-</code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>chain_state
-</code></pre></div>
-
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_text output_subarea output_execute_result">
-<pre>
-<code>{&#39;Geni AI&#39;: 95, &#39;John Smith&#39;: 5}</code>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code>block_chain
-</code></pre></div>
-
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_text output_subarea output_execute_result">
-<pre>
-<code>[{&#39;contents&#39;: {&#39;block_number&#39;: 0,
-   &#39;parent_hash&#39;: None,
-   &#39;transaction&#39;: [{&#39;Geni AI&#39;: 100}],
-   &#39;transaction_count&#39;: 1},
-  &#39;hash&#39;: &#39;e46fb93e96b70a86e6998cd4ba9f20cdbde1e843e5b2343667f0f46d23cee439&#39;},
- {&#39;contents&#39;: {&#39;block_number&#39;: 1,
-   &#39;parent_hash&#39;: &#39;e46fb93e96b70a86e6998cd4ba9f20cdbde1e843e5b2343667f0f46d23cee439&#39;,
-   &#39;transaction&#39;: {&#39;Geni AI&#39;: 95, &#39;John Smith&#39;: 5},
-   &#39;transaction_count&#39;: 2},
-  &#39;hash&#39;: &#39;65af8f82cd4e55e4db67280eb1cd8c03216ea829ca533135f684524018961c6b&#39;}]</code>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Our first new transaction has been created and inserted to the top of the stack. </p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h2>
-<p>https://towardsdatascience.com/blockchain-explained-in-7-python-functions-c49c84f34ba5</p>
-</div>
-</div>
-</div>
+                
+                  
                 
               
               
@@ -1385,7 +883,7 @@ chain_state = {&#39;Geni AI&#39;: 100}
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../.." class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Dictionary_Words/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1394,19 +892,19 @@ chain_state = {&#39;Geni AI&#39;: 100}
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Welcome to MkDocs
+                Unix Dictionary Words File
               </div>
             </div>
           </a>
         
         
-          <a href="../../Linux/Change_Ownership/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../Symbolic_Link/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Change Ownership of Files
+                Symbolic link
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

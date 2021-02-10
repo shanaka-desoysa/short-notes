@@ -6,7 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="List Python pip Package Sizes">
       
+      
+      
+        <meta name="author" content="Shanaka DeSoysa">
       
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
@@ -14,7 +18,7 @@
     
     
       
-        <title>Package Sizes Installed with pip - Notes</title>
+        <title>Python pip Package Sizes - Notes</title>
       
     
     
@@ -96,7 +100,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Package Sizes Installed with pip
+              Python pip Package Sizes
             
           </span>
         </div>
@@ -270,6 +274,18 @@
     <li class="md-nav__item">
       <a href="../../../Linux/Dictionary_Words/" class="md-nav__link">
         Unix Dictionary Words File
+      </a>
+    </li>
+  
+
+          
+            
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Linux/Random_Password/" class="md-nav__link">
+        Random Password Generator
       </a>
     </li>
   
@@ -590,12 +606,12 @@
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Package Sizes Installed with pip
+          Python pip Package Sizes
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Package Sizes Installed with pip
+        Python pip Package Sizes
       </a>
       
         
@@ -612,15 +628,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#descending-order" class="md-nav__link">
-    Descending Order
+  <a href="#ascending-order" class="md-nav__link">
+    Ascending Order
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ascending-order" class="md-nav__link">
-    Ascending Order
+  <a href="#descending-order" class="md-nav__link">
+    Descending Order
   </a>
   
 </li>
@@ -814,15 +830,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#descending-order" class="md-nav__link">
-    Descending Order
+  <a href="#ascending-order" class="md-nav__link">
+    Ascending Order
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ascending-order" class="md-nav__link">
-    Ascending Order
+  <a href="#descending-order" class="md-nav__link">
+    Descending Order
   </a>
   
 </li>
@@ -840,19 +856,8 @@
               
                 
                 
-                <h1 id="package-sizes-installed-with-pip">Package Sizes Installed with pip<a class="headerlink" href="#package-sizes-installed-with-pip" title="Permanent link">&para;</a></h1>
+                <h1 id="package-sizes-installed-with-pip">Package Sizes Installed with <code>pip</code><a class="headerlink" href="#package-sizes-installed-with-pip" title="Permanent link">&para;</a></h1>
 <p>List of <code>pip</code> packages and the sizes.</p>
-<h2 id="descending-order">Descending Order<a class="headerlink" href="#descending-order" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>pip list --format freeze <span class="p">|</span> <span class="se">\</span>
-awk -F <span class="o">=</span> <span class="o">{</span><span class="s1">&#39;print $1&#39;</span><span class="o">}</span> <span class="p">|</span> <span class="se">\</span>
-xargs pip3 show <span class="p">|</span> <span class="se">\</span>
-grep -E <span class="s1">&#39;Location:|Name:&#39;</span> <span class="p">|</span> <span class="se">\</span>
-cut -d <span class="s1">&#39; &#39;</span> -f <span class="m">2</span> <span class="p">|</span> <span class="se">\</span>
-paste -d <span class="s1">&#39; &#39;</span> - - <span class="p">|</span> <span class="se">\</span>
-awk <span class="s1">&#39;{print $2 &quot;/&quot; tolower($1)}&#39;</span> <span class="p">|</span> <span class="se">\</span>
-xargs du -sh <span class="m">2</span>&gt; /dev/null <span class="p">|</span> <span class="se">\</span>
-sort -hr
-</code></pre></div>
 <h2 id="ascending-order">Ascending Order<a class="headerlink" href="#ascending-order" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>pip list --format freeze <span class="p">|</span> <span class="se">\</span>
 awk -F <span class="o">=</span> <span class="o">{</span><span class="s1">&#39;print $1&#39;</span><span class="o">}</span> <span class="p">|</span> <span class="se">\</span>
@@ -864,6 +869,19 @@ awk <span class="s1">&#39;{print $2 &quot;/&quot; tolower($1)}&#39;</span> <span
 xargs du -sh <span class="m">2</span>&gt; /dev/null <span class="p">|</span> <span class="se">\</span>
 sort -h
 </code></pre></div>
+<h2 id="descending-order">Descending Order<a class="headerlink" href="#descending-order" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>pip list --format freeze <span class="p">|</span> <span class="se">\</span>
+awk -F <span class="o">=</span> <span class="o">{</span><span class="s1">&#39;print $1&#39;</span><span class="o">}</span> <span class="p">|</span> <span class="se">\</span>
+xargs pip3 show <span class="p">|</span> <span class="se">\</span>
+grep -E <span class="s1">&#39;Location:|Name:&#39;</span> <span class="p">|</span> <span class="se">\</span>
+cut -d <span class="s1">&#39; &#39;</span> -f <span class="m">2</span> <span class="p">|</span> <span class="se">\</span>
+paste -d <span class="s1">&#39; &#39;</span> - - <span class="p">|</span> <span class="se">\</span>
+awk <span class="s1">&#39;{print $2 &quot;/&quot; tolower($1)}&#39;</span> <span class="p">|</span> <span class="se">\</span>
+xargs du -sh <span class="m">2</span>&gt; /dev/null <span class="p">|</span> <span class="se">\</span>
+sort -hr
+</code></pre></div>
+                
+                  
                 
               
               

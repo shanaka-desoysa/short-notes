@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Change the ownership of all the files in current directory">
+        <meta name="description" content="Check Group Membership">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Change Ownership of Files - Notes</title>
+        <title>Check Group Membership - Notes</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chnage-ownership" class="md-skip">
+        <a href="#check-group-membership" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Change Ownership of Files
+              Check Group Membership
             
           </span>
         </div>
@@ -263,7 +263,7 @@
   
     <li class="md-nav__item">
       <a href="../Change_Ownership/" class="md-nav__link">
-        Check Group Membership
+        Change Ownership of Files
       </a>
     </li>
   
@@ -283,7 +283,7 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Change Ownership of Files
+        Check Group Membership
       </a>
       
     </li>
@@ -844,9 +844,8 @@
               
                 
                 
-                <h1 id="chnage-ownership">Chnage Ownership<a class="headerlink" href="#chnage-ownership" title="Permanent link">&para;</a></h1>
-<p>To change the ownership of all the files in current directory.</p>
-<div class="highlight"><pre><span></span><code>sudo chown -R <span class="nv">$USER</span>: .
+                <h1 id="check-group-membership">Check Group Membership<a class="headerlink" href="#check-group-membership" title="Permanent link">&para;</a></h1>
+<div class="highlight"><pre><span></span><code>id <span class="nv">$USER</span> <span class="p">|</span> tr <span class="s1">&#39;,&#39;</span> <span class="s1">&#39;\n&#39;</span>
 </code></pre></div>
                 
                   
@@ -877,7 +876,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Check Group Membership
+                Change Ownership of Files
               </div>
             </div>
           </a>

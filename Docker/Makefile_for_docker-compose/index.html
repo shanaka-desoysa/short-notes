@@ -6,7 +6,11 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Makefile for basic docker-compose commands.">
       
+      
+      
+        <meta name="author" content="Shanaka DeSoysa">
       
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
@@ -14,7 +18,7 @@
     
     
       
-        <title>Symbolic link - Notes</title>
+        <title>Makefile for docker-compose - Notes</title>
       
     
     
@@ -75,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#symbolic-link" class="md-skip">
+        <a href="#makefile-for-docker-compose" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +111,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              Symbolic link
+              Makefile for docker-compose
             
           </span>
         </div>
@@ -243,12 +247,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
       
       <label class="md-nav__link" for="nav-3">
         Docker
@@ -265,11 +271,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../Docker/Makefile_for_docker-compose/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Makefile for docker-compose
       </a>
+      
     </li>
   
 
@@ -286,14 +301,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" >
       
       <label class="md-nav__link" for="nav-4">
         Linux
@@ -312,7 +325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Change_Ownership/" class="md-nav__link">
+      <a href="../../Linux/Change_Ownership/" class="md-nav__link">
         Change Ownership of Files
       </a>
     </li>
@@ -324,7 +337,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Check_Group_Membership/" class="md-nav__link">
+      <a href="../../Linux/Check_Group_Membership/" class="md-nav__link">
         Check Group Membership
       </a>
     </li>
@@ -336,7 +349,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Dictionary_Words/" class="md-nav__link">
+      <a href="../../Linux/Dictionary_Words/" class="md-nav__link">
         Unix Dictionary Words File
       </a>
     </li>
@@ -348,7 +361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../List_files_exceeding_size/" class="md-nav__link">
+      <a href="../../Linux/List_files_exceeding_size/" class="md-nav__link">
         List Files Exceeding Certain Size
       </a>
     </li>
@@ -360,7 +373,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../Random_Password/" class="md-nav__link">
+      <a href="../../Linux/Random_Password/" class="md-nav__link">
         Random Password Generator
       </a>
     </li>
@@ -370,20 +383,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Linux/Symbolic_Link/" class="md-nav__link">
         Symbolic link
       </a>
-      
     </li>
   
 
@@ -894,10 +898,74 @@
               
                 
                 
-                <h1 id="symbolic-link">Symbolic link<a class="headerlink" href="#symbolic-link" title="Permanent link">&para;</a></h1>
-<p><a href="https://en.wikipedia.org/wiki/Symbolic_link">Symbolic link</a> In computing, a symbolic link (also symlink or soft link) is a term for any file that contains a reference to another file or directory in the form of an absolute or relative path and that affects pathname resolution.</p>
-<div class="highlight"><pre><span></span><code>readlink /usr/share/dict/words
+                <h1 id="makefile-for-docker-compose">Makefile for docker-compose<a class="headerlink" href="#makefile-for-docker-compose" title="Permanent link">&para;</a></h1>
+<p>Makefile for basic docker-compose commands.</p>
+<div class="highlight"><pre><span></span><code><span class="c1">## Project Name</span>
+<span class="c1">##</span>
+<span class="c1">##   Parameters </span>
+<span class="c1">##-------------------------|-----------------------------------------------------------------</span>
+<span class="c1">## COMPOSE_FILE            | Name of compose file (docker-compose.yml)</span>
+<span class="c1">## BUILD_CACHE             | Docker build cache (or --no-cache)</span>
+
+COMPOSE_FILE :<span class="o">=</span> docker-compose.yml
+BUILD_CACHE :<span class="o">=</span> 
+<span class="c1">#&quot;--no-cache&quot;</span>
+
+THIS_FILE :<span class="o">=</span> <span class="k">$(</span>lastword <span class="k">$(</span>MAKEFILE_LIST<span class="k">))</span>
+CMD_ARGUMENTS ?<span class="o">=</span> <span class="k">$(</span>cmd<span class="k">)</span>
+
+.PHONY: <span class="nb">help</span> build up start down destroy stop restart logs logs-web ps
+
+<span class="c1">##   Commands              </span>
+<span class="c1">##-------------------------|-----------------------------------------------------------------</span>
+<span class="c1">## help                    | print docs (make help) or dry run a command (make help cmd=run)</span>
+
+<span class="nb">help</span> : Makefile
+ifeq <span class="o">(</span><span class="k">$(</span>CMD_ARGUMENTS<span class="k">)</span>,<span class="o">)</span>
+    @sed -n <span class="s1">&#39;s/^##//p&#39;</span> $&lt; <span class="p">|</span> less
+<span class="k">else</span>
+    <span class="si">${</span><span class="nv">MAKE</span><span class="si">}</span> <span class="k">$(</span>CMD_ARGUMENTS<span class="k">)</span> --dry-run
+endif
+
+<span class="c1">## build                   | docker-compose build</span>
+build:
+        docker-compose -f <span class="k">$(</span>COMPOSE_FILE<span class="k">)</span> build <span class="k">$(</span>c<span class="k">)</span>
+
+<span class="c1">## up                      | docker-compose up</span>
+up:
+        docker-compose -f <span class="k">$(</span>COMPOSE_FILE<span class="k">)</span> up -d <span class="k">$(</span>c<span class="k">)</span>
+
+<span class="c1">## start                   | docker-compose start</span>
+start:
+        docker-compose -f <span class="k">$(</span>COMPOSE_FILE<span class="k">)</span> start <span class="k">$(</span>c<span class="k">)</span>
+
+<span class="c1">## down                    | docker-compose down</span>
+down:
+        docker-compose -f <span class="k">$(</span>COMPOSE_FILE<span class="k">)</span> down <span class="k">$(</span>c<span class="k">)</span>
+
+<span class="c1">## destroy                 | docker-compose down and remove volumes</span>
+destroy:
+        docker-compose -f <span class="k">$(</span>COMPOSE_FILE<span class="k">)</span> down -v <span class="k">$(</span>c<span class="k">)</span>
+
+<span class="c1">## stop                    | docker-compose stop</span>
+stop:
+        docker-compose -f <span class="k">$(</span>COMPOSE_FILE<span class="k">)</span> stop <span class="k">$(</span>c<span class="k">)</span>
+
+<span class="c1">## restart                 | docker-compose stop and up</span>
+restart:
+        docker-compose -f <span class="k">$(</span>COMPOSE_FILE<span class="k">)</span> stop <span class="k">$(</span>c<span class="k">)</span>
+        docker-compose -f <span class="k">$(</span>COMPOSE_FILE<span class="k">)</span> up -d <span class="k">$(</span>c<span class="k">)</span>
+
+<span class="c1">## logs                    | docker-compose logs</span>
+logs:
+        docker-compose -f <span class="k">$(</span>COMPOSE_FILE<span class="k">)</span> logs --tail<span class="o">=</span><span class="m">100</span> -f <span class="k">$(</span>c<span class="k">)</span>
+
+<span class="c1">## ps                      | docker-compose ps</span>
+ps:
+        docker-compose -f <span class="k">$(</span>COMPOSE_FILE<span class="k">)</span> ps
 </code></pre></div>
+                
+                  
                 
               
               
@@ -916,7 +984,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../Random_Password/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../BlockChain/Blockchain_Explained_in_7_Simple_Functions/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -925,19 +993,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Random Password Generator
+                Blockchain Explained in 7 Simple Functions
               </div>
             </div>
           </a>
         
         
-          <a href="../../MacOS/Flush_DNS_Cache/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Linux/Change_Ownership/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Flush DNS Cache on Mac OS
+                Change Ownership of Files
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

@@ -1,107 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/BlockChain/Blockchain_Explained_in_7_Simple_Functions/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/BlockChain/Blockchain_Explained_in_7_Simple_Functions/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Docker/Makefile_for_docker-compose/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Docker/Makefile_for_docker-compose/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Linux/Change_Ownership/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Linux/Change_Ownership/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Linux/Check_Group_Membership/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Linux/Check_Group_Membership/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Linux/Dictionary_Words/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Linux/Dictionary_Words/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Linux/List_files_exceeding_size/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Linux/List_files_exceeding_size/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Linux/Random_Password/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Linux/Random_Password/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Linux/Symbolic_Link/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Linux/Symbolic_Link/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/MacOS/Flush_DNS_Cache/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/ML_with_Graphs/CS224W_Colab_0/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Network_Security/ARP_Spoofing/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/MacOS/Flush_DNS_Cache/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/PySpark/Install_With_Docker_Compose/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Network_Security/ARP_Spoofing/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/PyTorch/gradients/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/PySpark/Install_With_Docker_Compose/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/PyTorch/tensor_basics/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/PyTorch/gradients/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/PyTorch/tensor_operations/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/PyTorch/tensor_basics/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/Basics/ASCII/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/PyTorch/tensor_operations/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/Basics/ISO_8601/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Python/Basics/ASCII/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/Basics/OrderedDict_LRU_Cache/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Python/Basics/ISO_8601/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/Basics/pip_package_size/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Python/Basics/OrderedDict_LRU_Cache/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/Flask/Flask_Chat_Colab/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Python/Basics/pip_package_size/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/OSRM/Open_Source_Routing_Machine/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Python/Flask/Flask_Chat_Colab/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/Pandas/Display_DataFrames_side_by_side/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Python/OSRM/Open_Source_Routing_Machine/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/Pandas/Groupby/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Python/Pandas/Display_DataFrames_side_by_side/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/Pandas/MonthBegin_and_MonthEnd/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Python/Pandas/Groupby/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/Pandas/Pandas_Value_Counts/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Python/Pandas/MonthBegin_and_MonthEnd/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://shanaka-desoysa.github.io/short-notes/Python/Pandas/Quandl_Timeseries/</loc>
-     <lastmod>2021-04-12</lastmod>
+     <loc>https://notes.shanakadesoysa.coms/Python/Pandas/Pandas_Value_Counts/</loc>
+     <lastmod>2021-04-24</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://notes.shanakadesoysa.coms/Python/Pandas/Quandl_Timeseries/</loc>
+     <lastmod>2021-04-24</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>

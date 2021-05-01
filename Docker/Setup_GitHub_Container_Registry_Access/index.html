@@ -6,26 +6,28 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
+        <meta name="description" content="Setup GitHub Container Registry Access to pull docker images.">
       
       
-        <meta name="author" content="Shanaka C. DeSoysa">
+      
+        <meta name="author" content="Shanaka DeSoysa">
       
       
-        <link rel="canonical" href="https://notes.shanakadesoysa.com/Python/Basics/OrderedDict_LRU_Cache/">
+        <link rel="canonical" href="https://notes.shanakadesoysa.com/Docker/Setup_GitHub_Container_Registry_Access/">
       
-      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.2.6">
     
     
       
-        <title>OrderedDict LRU Cache - Notes</title>
+        <title>Setup GitHub Container Registry Access - Notes</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.cb6bc1d0.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cb6bc1d0.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.39b8e14a.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.39b8e14a.min.css">
         
       
     
@@ -40,11 +42,11 @@
     
     
     
-      <link rel="stylesheet" href="../../../css/ansi-colours.css">
+      <link rel="stylesheet" href="../../css/ansi-colours.css">
     
-      <link rel="stylesheet" href="../../../css/jupyter-cells.css">
+      <link rel="stylesheet" href="../../css/jupyter-cells.css">
     
-      <link rel="stylesheet" href="../../../css/pandas-dataframe.css">
+      <link rel="stylesheet" href="../../css/pandas-dataframe.css">
     
     
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-FQ0JJJ0W06"></script>
@@ -79,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#iso-8601-timestamp-in-python" class="md-skip">
+        <a href="#setup-github-container-registry-access" class="md-skip">
           Skip to content
         </a>
       
@@ -111,7 +113,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              OrderedDict LRU Cache
+              Setup GitHub Container Registry Access
             
           </span>
         </div>
@@ -217,7 +219,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Welcome to Shanaka DeSoysa's Notes
       </a>
     </li>
@@ -254,7 +256,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../BlockChain/Blockchain_Explained_in_7_Simple_Functions/" class="md-nav__link">
+      <a href="../../BlockChain/Blockchain_Explained_in_7_Simple_Functions/" class="md-nav__link">
         Blockchain Explained in 7 Simple Functions
       </a>
     </li>
@@ -273,12 +275,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
       
       <label class="md-nav__link" for="nav-3">
         Docker
@@ -297,7 +301,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Docker/Makefile_for_docker-compose/" class="md-nav__link">
+      <a href="../Makefile_for_docker-compose/" class="md-nav__link">
         Makefile for docker-compose
       </a>
     </li>
@@ -307,11 +311,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../Docker/Setup_GitHub_Container_Registry_Access/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Setup GitHub Container Registry Access
       </a>
+      
     </li>
   
 
@@ -352,7 +365,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Linux/Change_Ownership/" class="md-nav__link">
+      <a href="../../Linux/Change_Ownership/" class="md-nav__link">
         Change Ownership of Files
       </a>
     </li>
@@ -364,7 +377,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Linux/Check_Group_Membership/" class="md-nav__link">
+      <a href="../../Linux/Check_Group_Membership/" class="md-nav__link">
         Check Group Membership
       </a>
     </li>
@@ -376,7 +389,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Linux/Dictionary_Words/" class="md-nav__link">
+      <a href="../../Linux/Dictionary_Words/" class="md-nav__link">
         Unix Dictionary Words File
       </a>
     </li>
@@ -388,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Linux/List_files_exceeding_size/" class="md-nav__link">
+      <a href="../../Linux/List_files_exceeding_size/" class="md-nav__link">
         List Files Exceeding Certain Size
       </a>
     </li>
@@ -400,7 +413,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Linux/Random_Password/" class="md-nav__link">
+      <a href="../../Linux/Random_Password/" class="md-nav__link">
         Random Password Generator
       </a>
     </li>
@@ -412,7 +425,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Linux/Symbolic_Link/" class="md-nav__link">
+      <a href="../../Linux/Symbolic_Link/" class="md-nav__link">
         Symbolic link
       </a>
     </li>
@@ -455,7 +468,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../ML_with_Graphs/CS224W_Colab_0/" class="md-nav__link">
+      <a href="../../ML_with_Graphs/CS224W_Colab_0/" class="md-nav__link">
         CS224W Colab 0
       </a>
     </li>
@@ -498,7 +511,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../MacOS/Flush_DNS_Cache/" class="md-nav__link">
+      <a href="../../MacOS/Flush_DNS_Cache/" class="md-nav__link">
         Flush DNS Cache on Mac OS
       </a>
     </li>
@@ -541,7 +554,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Network_Security/ARP_Spoofing/" class="md-nav__link">
+      <a href="../../Network_Security/ARP_Spoofing/" class="md-nav__link">
         Kali Linux ARP Spoofing
       </a>
     </li>
@@ -584,7 +597,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../PySpark/Install_With_Docker_Compose/" class="md-nav__link">
+      <a href="../../PySpark/Install_With_Docker_Compose/" class="md-nav__link">
         PySpark Cluster Setup with Docker Compose
       </a>
     </li>
@@ -627,7 +640,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../PyTorch/gradients/" class="md-nav__link">
+      <a href="../../PyTorch/gradients/" class="md-nav__link">
         Gradients
       </a>
     </li>
@@ -639,7 +652,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../PyTorch/tensor_basics/" class="md-nav__link">
+      <a href="../../PyTorch/tensor_basics/" class="md-nav__link">
         Tensor basics
       </a>
     </li>
@@ -651,7 +664,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../PyTorch/tensor_operations/" class="md-nav__link">
+      <a href="../../PyTorch/tensor_operations/" class="md-nav__link">
         Tensor operations
       </a>
     </li>
@@ -670,14 +683,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" >
       
       <label class="md-nav__link" for="nav-10">
         Python
@@ -694,14 +705,12 @@
             
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-1" type="checkbox" id="nav-10-1" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-1" type="checkbox" id="nav-10-1" >
       
       <label class="md-nav__link" for="nav-10-1">
         Basics
@@ -720,7 +729,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ASCII/" class="md-nav__link">
+      <a href="../../Python/Basics/ASCII/" class="md-nav__link">
         ASCII
       </a>
     </li>
@@ -732,7 +741,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../ISO_8601/" class="md-nav__link">
+      <a href="../../Python/Basics/ISO_8601/" class="md-nav__link">
         ISO 8601
       </a>
     </li>
@@ -742,56 +751,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          OrderedDict LRU Cache
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../Python/Basics/OrderedDict_LRU_Cache/" class="md-nav__link">
         OrderedDict LRU Cache
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#utc-time" class="md-nav__link">
-    UTC Time
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#local-time" class="md-nav__link">
-    Local Time
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -801,7 +765,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../pip_package_size/" class="md-nav__link">
+      <a href="../../Python/Basics/pip_package_size/" class="md-nav__link">
         Python pip Package Sizes
       </a>
     </li>
@@ -841,7 +805,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Flask/Flask_Chat_Colab/" class="md-nav__link">
+      <a href="../../Python/Flask/Flask_Chat_Colab/" class="md-nav__link">
         Flask Chat Colab
       </a>
     </li>
@@ -881,7 +845,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Jupyter/Generate_Jupyter_password/" class="md-nav__link">
+      <a href="../../Python/Jupyter/Generate_Jupyter_password/" class="md-nav__link">
         Generate Jupyter password
       </a>
     </li>
@@ -921,7 +885,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../OSRM/Open_Source_Routing_Machine/" class="md-nav__link">
+      <a href="../../Python/OSRM/Open_Source_Routing_Machine/" class="md-nav__link">
         Open Source Routing Machine
       </a>
     </li>
@@ -961,7 +925,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pandas/Display_DataFrames_side_by_side/" class="md-nav__link">
+      <a href="../../Python/Pandas/Display_DataFrames_side_by_side/" class="md-nav__link">
         Display DataFrames side by side
       </a>
     </li>
@@ -973,7 +937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pandas/Groupby/" class="md-nav__link">
+      <a href="../../Python/Pandas/Groupby/" class="md-nav__link">
         Groupby
       </a>
     </li>
@@ -985,7 +949,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pandas/MonthBegin_and_MonthEnd/" class="md-nav__link">
+      <a href="../../Python/Pandas/MonthBegin_and_MonthEnd/" class="md-nav__link">
         MonthBegin and MonthEnd
       </a>
     </li>
@@ -997,7 +961,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pandas/Pandas_Value_Counts/" class="md-nav__link">
+      <a href="../../Python/Pandas/Pandas_Value_Counts/" class="md-nav__link">
         Pandas Value Counts
       </a>
     </li>
@@ -1009,7 +973,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Pandas/Quandl_Timeseries/" class="md-nav__link">
+      <a href="../../Python/Pandas/Quandl_Timeseries/" class="md-nav__link">
         Quandl Timeseries
       </a>
     </li>
@@ -1046,28 +1010,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#utc-time" class="md-nav__link">
-    UTC Time
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#local-time" class="md-nav__link">
-    Local Time
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -1078,144 +1020,21 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/shanaka-desoysa/notes/edit/master/docs/Python/Basics/OrderedDict_LRU_Cache.ipynb" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/shanaka-desoysa/notes/edit/master/docs/Docker/Setup_GitHub_Container_Registry_Access.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-<script>
-(function() {
-  function addWidgetsRenderer() {
-    var mimeElement = document.querySelector('script[type="application/vnd.jupyter.widget-view+json"]');
-    var scriptElement = document.createElement('script');
-    var widgetRendererSrc = 'https://unpkg.com/@jupyter-widgets/html-manager@*/dist/embed-amd.js';
-    var widgetState;
-
-    // Fallback for older version:
-    try {
-      widgetState = mimeElement && JSON.parse(mimeElement.innerHTML);
-
-      if (widgetState && (widgetState.version_major < 2 || !widgetState.version_major)) {
-        widgetRendererSrc = 'jupyter-js-widgets@*/dist/embed.js';
-      }
-    } catch(e) {}
-
-    scriptElement.src = widgetRendererSrc;
-    document.body.appendChild(scriptElement);
-  }
-
-  document.addEventListener('DOMContentLoaded', addWidgetsRenderer);
-}());
-</script>
-
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="iso-8601-timestamp-in-python">ISO 8601 Timestamp in Python<a class="headerlink" href="#iso-8601-timestamp-in-python" title="Permanent link">&para;</a></h1>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="" title="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a> <em>Data elements and interchange formats – Information interchange – Representation of dates and times</em> is an international standard covering the exchange of date- and time-related data. It was issued by the International Organization for Standardization (ISO) and was first published in 1988.</p>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timezone</span><span class="p">,</span> <span class="n">tzinfo</span>
+                <h1 id="setup-github-container-registry-access">Setup GitHub Container Registry Access<a class="headerlink" href="#setup-github-container-registry-access" title="Permanent link">&para;</a></h1>
+<p>Generate a <a href="https://github.com/settings/tokens">GitHub Token</a> with <code>read:packages</code> scope.</p>
+<p>Run command to login to container registry.</p>
+<div class="highlight"><pre><span></span><code>docker login -u <span class="o">{</span>USER<span class="o">}</span> -p <span class="o">{</span>TOKEN<span class="o">}</span> docker.pkg.github.com
 </code></pre></div>
-
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="utc-time">UTC Time<a class="headerlink" href="#utc-time" title="Permanent link">&para;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><span class="c1"># UTC time now</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">microsecond</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">isoformat</span><span class="p">())</span>
+<p>Then you can access the images as follows:</p>
+<div class="highlight"><pre><span></span><code>docker pull docker.pkg.github.com/OWNER/REPOSITORY/IMAGE_NAME:TAG_NAME
 </code></pre></div>
-
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-<code>2020-05-12T16:16:06
-</code>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><span class="c1"># UTC time now with timezone info</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">astimezone</span><span class="p">(</span><span class="n">tz</span><span class="o">=</span><span class="n">timezone</span><span class="o">.</span><span class="n">utc</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">microsecond</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">isoformat</span><span class="p">())</span>
-</code></pre></div>
-
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-<code>2020-05-12T16:16:06+00:00
-</code>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="local-time">Local Time<a class="headerlink" href="#local-time" title="Permanent link">&para;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="highlight"><pre><span></span><code><span class="c1"># Local time now with timezone info</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">astimezone</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">microsecond</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">isoformat</span><span class="p">())</span>
-</code></pre></div>
-
-</div>
-<div class="output_wrapper">
-<div class="output">
-<div class="output_area">
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>
-<code>2020-05-12T12:16:06-04:00
-</code>
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><a href="https://colab.research.google.com/github/shanaka-desoysa/notes/blob/master/content/python/basics/Python_ISO_8601.ipynb" target="_blank"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a></p>
-</div>
-</div>
-</div>
+                
+                  
                 
               
               
@@ -1234,7 +1053,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../ISO_8601/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../Makefile_for_docker-compose/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1243,19 +1062,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                ISO 8601
+                Makefile for docker-compose
               </div>
             </div>
           </a>
         
         
-          <a href="../pip_package_size/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../Linux/Change_Ownership/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Python pip Package Sizes
+                Change Ownership of Files
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1282,15 +1101,15 @@
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.53cc9318.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../assets/javascripts/vendor.53cc9318.min.js"></script>
+      <script src="../../assets/javascripts/bundle.e9c9f54f.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
-          base: "../../..",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.9c0e82ba.min.js"
+            worker: "../../assets/javascripts/worker/search.9c0e82ba.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
